@@ -2172,11 +2172,10 @@ body {
         .project_footer {
             color: #999999;
             clear: both;
-			position: fixed;
 			text-align: right;
 			footer;
             font-size: 11px;
-            padding: 20px 0px 30px 0px;
+            padding: 20px 0px 0px 0px;
 			margin-top: 130px; /* negative value of footer height */
 	height: 200px;
 	clear:both;} 
