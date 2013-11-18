@@ -1,16 +1,16 @@
 
 /* PRELOAD IMAGES AND SHIT*/
 
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 480px) and (orientation: portrait){
     body{...}
     div{...}
     #nav,#nav li{...}
     img{
-        max-width:100%;
+        max-width:80%;
         height:auto;
     }
 		
-		
+	border-style:dotted;
  	clear: both;
  	position: relative;
  	z-index: 10;
@@ -18,8 +18,21 @@
  	text-align: left;
  
 }
-
-
+@media screen and (max-device-width: 480px) and (orientation: landscape){
+    body{...}
+    div{...}
+    #nav,#nav li{...}
+    img{
+        max-width:60%;
+        height:auto;
+    }
+		
+	border-style:dotted;
+ 	clear: both;
+ 	position: relative;
+ 	z-index: 10;
+ 	height: 5em;
+ 	text-align: left;
 }
 
     .detail_preload {
@@ -29,31 +42,84 @@
 
 /* Body Stretch
 *******************************************************************************************/
+@media screen and (max-device-width: 480px)
+{ 
+html, body, #container { height: 99%; }
+body > #container { height: auto; min-height: 86%; 	 border-width:1px;
+;
+}
 
-html, body, #container { height: 100%; }
-body > #container { height: auto; min-height: 100%; }
-
+}
+@media screen and (min-device-width: 481px) {
+html, body, #container { height: 95%; }
+body > #container { height: auto; min-height: 90%; 		border-width:1px;
+;
+}
+}
 
 
     /* Footer
 ***********************************************************************************************************/
-@media screen and (max-device-width: 480px){ .footer{
-img{
-        max-width:50%;
-        height:auto;
-    }
+@media screen and (max-device-width: 480px) and (orientation: portrait){ 
+.footer{ 
+	clear: both;
 
-}}
+ 	position: relative;
+	
+	margin-left:-8px;
+ 	z-index: 11;
+	width:320px;
+ 	height: 14%;
+ 	text-align: right;
+
+		}
+.footer img{ 
+	height: 100%;
+   	width: auto;
+	}
+}
+
+@media screen and (max-device-width: 480px) and (orientation: landscape){
+.footer{ 
+	clear: both;
+
+ 	position: relative;
+	
+	margin-left:-8px;
+ 	z-index: 11;
+	width:100%;
+ 	height: 14%;
+ 	text-align: right;
+
+		}
+.footer img{ 
+	height: 100%;
+   	width: auto;
+	}
+}
+
+
+
+@media screen and (min-device-width: 481px) {
 .footer {
+
+		border-width:1px;
 
 
  clear: both;
  position: relative;
  z-index: 10;
- height: 5em;
+ max-height: 15%;
+ max-width: 100%;
+width:100%;
  text-align: right;
- margin-right: -.5em;
- margin-top: -11em;
+padding-bottom: 20px;
+padding-right: 20px;
+}
+.footer img{ 
+	height: 100%;
+   	width: auto;
+	}
 }
 	
 .pagination { color: #999999; font-size: 15px; margin: 1.5 0 0 0; }
