@@ -1,6 +1,16 @@
 
 /* PRELOAD IMAGES AND SHIT*/
 
+@media screen and (max-device-width: 480px){
+    body{...}
+    div{...}
+    #nav,#nav li{...}
+    img{
+        max-width:100%;
+        height:auto;
+    }
+}
+
     .detail_preload {
         display:block !important;
     }
