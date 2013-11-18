@@ -9,11 +9,7 @@
         max-width:100%;
         height:auto;
     }
-		.footer {
-    img{
-        max-width:50%;
-		height:auto;
-		}
+		
 		
  	clear: both;
  	position: relative;
@@ -41,8 +37,15 @@ body > #container { height: auto; min-height: 100%; }
 
     /* Footer
 ***********************************************************************************************************/
-    
+@media screen and (max-device-width: 480px){ .footer{
+img{
+        max-width:50%;
+        height:auto;
+    }
+
+}}
 .footer {
+
 
  clear: both;
  position: relative;
