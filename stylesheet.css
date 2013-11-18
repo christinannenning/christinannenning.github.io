@@ -9,6 +9,21 @@
         max-width:100%;
         height:auto;
     }
+		.footer {
+    img{
+        max-width:100%;
+		height:auto;
+		}
+		
+ 	clear: both;
+ 	position: relative;
+ 	z-index: 10;
+ 	height: 5em;
+ 	text-align: left;
+ 
+}
+
+
 }
 
     .detail_preload {
